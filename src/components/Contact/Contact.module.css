@@ -1,0 +1,11 @@
+.contactItem {
+  background-color: #ff00558c;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 15px;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}

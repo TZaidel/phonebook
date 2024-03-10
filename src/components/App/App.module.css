@@ -1,0 +1,16 @@
+.container {
+  width: 720px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
