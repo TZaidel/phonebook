@@ -1,6 +1,6 @@
 import './SearchBox.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeValue } from '../redux/nameSlice.js';
+import { changeValue } from '../../redux/nameSlice.js';
 
 export default function SearchBox() {
   const dispatch = useDispatch();
