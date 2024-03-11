@@ -13,7 +13,7 @@ const handleRejected = (state, action) => {
 };
 
 const usersSlice = createSlice({
-  name: 'users',
+  name: 'contacts',
   initialState: {
     users: [],
     loading: false,
@@ -34,6 +34,8 @@ const usersSlice = createSlice({
         state.isLoading = false;
         state.error = false;
         state.users.push(action.payload);
+        // state.users=[...state.users, action.payload];
+
       })
       .addCase(addContact.rejected, handleRejected)
       .addCase(deleteContact.pending, handlePending)

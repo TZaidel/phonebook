@@ -6,17 +6,17 @@ import ContactList from '../components/ContactList/ContactList';
 import SearchBox from '../components/SearchBox/SearchBox';
 
 export default function Contacts() {
-  // const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch])
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch])
   return (
     <div>
       <h1>Contacts</h1>
-      {/* <ContactForm />
+      <ContactForm />
       <SearchBox />
-      <ContactList /> */}
+      <ContactList />
     </div>
   );
 }
