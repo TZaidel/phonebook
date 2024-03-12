@@ -1,14 +1,16 @@
-div {
+.searchBox__wrap {
   display: flex;
   flex-direction: column;
+  padding: 40px 20px 0 40px;
+  position: relative;
 }
 
-label {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-input {
-  margin-bottom: 4px;
+.searchBox__input {
   padding: 10px;
+  font-size: 16px;
+  background-color: var(--dark-gray-color);
+  border: 0.5px solid #ffffff16;
+  border-radius: 4px;
+  color: var(--white-color);
+  padding-left: 40px;
 }

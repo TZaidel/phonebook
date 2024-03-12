@@ -1,0 +1,112 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login__wrap_ring {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__wrap_ring i {
+  position: absolute;
+  inset: 0;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.ring_1 {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 12s linear infinite;
+}
+
+.ring_2 {
+  border-radius: 41% 44% 56% 59%/38% 40% 53% 37%;
+  animation: animate 9s linear infinite;
+}
+
+.ring_3 {
+  border-radius: 41% 44% 56% 59%/38% 42% 50% 37%;
+  animation: animate2 16s linear infinite;
+}
+
+.login__wrap_ring:hover {
+  & .ring_1 {
+    border: 3px solid var(--accent-color);
+    filter: drop-shadow(0 0 20px var(--accent-color));
+  }
+
+  & .ring_2 {
+    border: 3px solid #8700a9;
+    filter: drop-shadow(0 0 20px #8700a9);
+  }
+
+  & .ring_3 {
+    border: 3px solid #1100ff;
+    filter: drop-shadow(0 0 20px #1100ff);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 300px;
+  z-index: 1;
+
+  &__label {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 40px;
+    margin-bottom: 4px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    background-color: transparent;
+    border: 1px solid var(--dark-gray-color);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+  }
+}

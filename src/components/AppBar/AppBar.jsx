@@ -3,12 +3,13 @@ import UserMenu from '../UserMenu/UserMenu'
 import AuthNav from '../AuthNav/AuthNav'
 import { useAuth } from '../../hooks'
 
-export default function AppBar() {
+import css from './AppBar.module.css'
 
+export default function AppBar() {
   const { isLoggedIn } = useAuth()
   
   return (
-    <header>
+    <header className={css.appBar__wrap }>
       <Navigation />
       {isLoggedIn ? <UserMenu/> : <AuthNav/>}
     </header>

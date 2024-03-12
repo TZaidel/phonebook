@@ -8,10 +8,10 @@ import { useAuth } from '../hooks/useAuth.js';
 import RestrictedRoute from './RestrictedRoute';
 import PrivateRoute from './PrivateRoute';
 
-const HomePage = lazy(() => import('../pages/Home.jsx'));
-const RegisterPage = lazy(() => import('../pages/Register.jsx'));
-const LoginPage = lazy(() => import('../pages/Login.jsx'));
-const ContactsPage = lazy(() => import('../pages/Contacts.jsx'));
+const HomePage = lazy(() => import('../pages/Home/Home.jsx'));
+const RegisterPage = lazy(() => import('../pages/Register/Register.jsx'));
+const LoginPage = lazy(() => import('../pages/Login/Login.jsx'));
+const ContactsPage = lazy(() => import('../pages/Contacts/Contacts.jsx'));
 
 export default function App() {
   const dispatch = useDispatch();

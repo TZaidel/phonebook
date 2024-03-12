@@ -1,5 +1,8 @@
 .contactList {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-grow: 1;
+  padding-right: 20px;
 }

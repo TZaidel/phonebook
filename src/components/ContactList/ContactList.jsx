@@ -12,17 +12,14 @@ export default function ContactList() {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-  console.log(selectUsers);
-
   const users = useSelector(selectUsers);
   const name = useSelector(selectNameFilter);
   const visibleUsers = users.filter(user => user.name.toLowerCase().includes(name));
-  console.log(visibleUsers);
 
   return (
     <ul className={css.contactList}>
-      {visibleUsers.map(({ id, name, phone }) => (
-        <Contact id={id} name={name} key={id} number={phone} />
+      {visibleUsers.map(({ id, name, number }) => (
+        <Contact id={id} name={name} key={id} number={number} />
       ))}
     </ul>
   );

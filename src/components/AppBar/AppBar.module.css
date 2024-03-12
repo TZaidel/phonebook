@@ -1,0 +1,11 @@
+.appBar__wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--accent-color);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  background-color: #242424; 
+  z-index: 1;
+}

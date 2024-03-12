@@ -1,0 +1,9 @@
+.contactsPage{
+  display: flex;
+flex-direction: row;
+
+&__contacts{
+  flex-grow: 1;
+}
+}
+

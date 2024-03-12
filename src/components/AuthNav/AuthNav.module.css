@@ -1,0 +1,16 @@
+.authNav__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 300px;
+  text-transform: uppercase;
+}
+
+.authNav__link {
+  font-size: 18px;
+}
+
+.active {
+  color: var(--accent-color);
+}

@@ -1,0 +1,22 @@
+.userMenu__wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.userMenu__name {
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+}
+
+.userMenu__btn {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--dark-gray-color);
+  background-color: var(--dark-gray-color);
+  padding: 5px 10px;
+}
