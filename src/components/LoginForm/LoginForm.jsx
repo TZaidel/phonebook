@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from '../../redux/auth/operations.js';
-
+import toast from 'react-hot-toast';
 import css from './LoginForm.module.scss';
 
 export default function LoginForm() {
@@ -12,8 +12,15 @@ export default function LoginForm() {
         email: e.currentTarget.elements.email.value,
         password: e.currentTarget.elements.password.value,
       })
-    );
-    e.currentTarget.reset();
+    )
+      .unwrap()
+      .then(() => {
+        e.currentTarget.reset();
+      })
+      .catch(error => {
+        toast.error('Incorrect username or password');
+        console.log(error);
+      });
   };
 
   return (
