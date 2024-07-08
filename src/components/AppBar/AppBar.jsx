@@ -1,17 +1,17 @@
-import Navigation from '../Navigation/Navigation'
-import UserMenu from '../UserMenu/UserMenu'
-import AuthNav from '../AuthNav/AuthNav'
-import { useAuth } from '../../hooks'
+import Navigation from '../Navigation/Navigation';
+import UserMenu from '../UserMenu/UserMenu';
+import AuthNav from '../AuthNav/AuthNav';
+import { useAuth } from '../../hooks';
 
-import css from './AppBar.module.css'
+import css from './AppBar.module.css';
 
 export default function AppBar() {
-  const { isLoggedIn } = useAuth()
-  
+  const { isLoggedIn } = useAuth();
+
   return (
-    <header className={css.appBar__wrap }>
+    <header className={css.appBar__wrap}>
       <Navigation />
-      {isLoggedIn ? <UserMenu/> : <AuthNav/>}
+      {isLoggedIn ? <UserMenu /> : <AuthNav />}
     </header>
-  )
+  );
 }

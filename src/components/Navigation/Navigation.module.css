@@ -1,16 +1,23 @@
-.nav__wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-  width: 300px;
-  text-transform: uppercase;
-}
-
 .nav__link {
-  font-size: 18px;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .active {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__wrap {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% / 2);
+  }
+
+  .nav__link {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }

@@ -34,8 +34,6 @@ const usersSlice = createSlice({
         state.isLoading = false;
         state.error = false;
         state.users.push(action.payload);
-        // state.users=[...state.users, action.payload];
-
       })
       .addCase(addContact.rejected, handleRejected)
       .addCase(deleteContact.pending, handlePending)
@@ -46,8 +44,6 @@ const usersSlice = createSlice({
         state.users.splice(index, 1);
       }),
 });
-
-// export const userReducer = usersSlice.reducer;
 
 const persistConfig = {
   key: 'user',

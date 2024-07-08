@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
+
 .register__wrap_ring {
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,15 +75,14 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  width: 300px;
+  width: 200px;
   z-index: 1;
 
   &__label {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
     letter-spacing: 1.3px;
     margin-bottom: 6px;
-    margin-top: 12px;
+    margin-top: 10px;
     text-align: center;
   }
 
@@ -93,6 +93,7 @@
     padding: 10px;
     border-radius: 40px;
     margin-bottom: 4px;
+    font-size: 12px;
 
     &_error {
       color: rgb(255, 44, 16);
@@ -103,16 +104,45 @@
   }
 
   &__btn {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
+    margin-top: 20px;
     background-color: transparent;
     border: 1px solid var(--dark-gray-color);
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
+    padding: 10px 25px;
+    font-size: 12px;
     letter-spacing: 1.3px;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register__wrap_ring {
+    width: 400px;
+    height: 400px;
+  }
+
+  .registerForm {
+    width: 220px;
+
+    &__label {
+      font-size: 16px;
+      margin-top: 12px;
+    }
+
+    &__input {
+      padding: 10px 15px;
+    }
+
+    &__btn {
+      margin: 30px auto 0;
+      padding: 10px 50px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .register__wrap_ring {
+    width: 450px;
+    height: 450px;
   }
 }

@@ -1,16 +1,24 @@
-.authNav__wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-  width: 300px;
+.nav__link {
+  display: block;
+  font-size: 14px;
+  text-align: right;
   text-transform: uppercase;
-}
-
-.authNav__link {
-  font-size: 18px;
+  margin-bottom: 4px;
 }
 
 .active {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__wrap {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% / 2);
+  }
+
+  .nav__link {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
 }

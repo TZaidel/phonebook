@@ -1,8 +1,18 @@
-# React + Vite
+# Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The [Phone Book](https://phonebook-sage-eta.vercel.app/) project is a web application built with
+React, Redux and Vite that allows users to manage their contacts.\
+Users can register, log in, searchfor existing contacts by name, add new contacts, and delete contacts.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### User Authentication:
+
+Register: Create a new account. Login: Access your account with your credentials.
+
+### Contacts Management:
+
+Add Contact: Add a new contact with a name and mobile number.\
+Search Contact: Search for contact by name using search box.\
+Contact List: View a list of all contacts.\
+Delete Contact: Remove contact from the list.
