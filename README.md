@@ -3,6 +3,8 @@
 The [Phone Book](https://phonebook-sage-eta.vercel.app/) project is a web application built with
 React, Redux and Vite that allows users to manage their contacts.\
 Users can register, log in, searchfor existing contacts by name, add new contacts, and delete contacts.
+\
+The application is responsive and optimized for mobile devices.
 
 ## Features
 
